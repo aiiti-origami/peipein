@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>お絵かきキャンバス</title>
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+    <div>
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="lineWidthSlider" min="1" max="10" value="3">
+        <button id="eraserButton">消しゴム</button>
+        <button id="clearButton">クリア</button>
+        <select id="shapeSelector">
+            <option value="line">線</option>
+            <option value="rect">四角形</option>
+            <option value="circle">円</option>
+        </select>
+        <input type="file" id="imageLoader" accept="image/*">
+        <button id="undoButton">アンドゥ</button>
+        <button id="redoButton">リドゥ</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
